@@ -4,7 +4,7 @@ I'm going to use a couple of modules I've learned to build a blog as a replaceme
 
 Back End: Java Spring Boot
 
-Front End: React
+Front End: React, Vite, TypeScript
 
 Database: MongoDB
 
