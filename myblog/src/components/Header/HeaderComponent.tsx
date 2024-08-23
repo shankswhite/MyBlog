@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 // CSS
 import css from './HeaderComponent.module.scss'
@@ -11,10 +12,13 @@ import { BiMenuAltRight, BiPhoneCall } from 'react-icons/bi'
 import { motion } from 'framer-motion'
 // @ts-ignore
 import { headerVariants, getMenuStyles } from '../../utils/motion'
+import RecipeGenerator from '../RecipeGenerator/RecipeGeneratorComponent'
 
 // hook
 // @ts-ignore
 import useHeaderShadow from '../../hooks/useHeaderShadow';
+
+
 
 
 export default function HeaderComponent() {
@@ -37,10 +41,11 @@ export default function HeaderComponent() {
         <ul 
         style={getMenuStyles(menuOpen)}
         className={`flexCenter ${css.menu}`}>
-          <li><a href="">Blog</a></li>
-          <li><a href="">Portfolio</a></li>
-          <li><a href="">Experience</a></li>
-          <li><a href="">Resume</a></li>
+          <li><Link to="/">Blog</Link></li>
+          <li><Link to="/portfolio">Portfolio</Link></li>
+          <li><Link to="/experience">Experience</Link></li>
+          <li><Link to="/resume">Resume</Link></li>
+          <li><Link to="/recipe-generator">Recipe Generator</Link></li>
           <li className={`flexCenter ${css.phone}`}>
             <p>+1 408 218 9166</p>
             <BiPhoneCall size={"40px"}/>
