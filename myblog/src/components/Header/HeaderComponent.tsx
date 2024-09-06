@@ -39,10 +39,10 @@ export default function HeaderComponent() {
         <ul 
         style={getMenuStyles(menuOpen)}
         className={`flexCenter ${css.menu}`}>
-          <li><Link to="/">Blog</Link></li>
+          {/* <li><Link to="/">Blog</Link></li>
           <li><Link to="/portfolio">Portfolio</Link></li>
           <li><Link to="/experience">Experience</Link></li>
-          <li><Link to="/resume">Resume</Link></li>
+          <li><Link to="/resume">Resume</Link></li> */}
           <li><Link to="/recipe-generator">AI ChatBot</Link></li>
           <li className={`flexCenter ${css.phone}`}>
             <p>+1 669 388 2709</p>
