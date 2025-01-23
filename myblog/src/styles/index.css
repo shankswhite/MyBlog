@@ -33,3 +33,18 @@
 .box:nth-child(3n + 3) {
   grid-column: 3;
 }
+
+/* Adjust existing styles */
+.app-container {
+  height: 100%;
+  padding: 0;
+}
+
+.form-container {
+  padding: 10px 0;
+}
+
+.result-container {
+  max-height: 300px;
+  overflow-y: auto;
+}

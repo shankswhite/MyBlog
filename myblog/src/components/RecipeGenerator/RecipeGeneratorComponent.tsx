@@ -1,9 +1,10 @@
 // import React from 'react'
 
-import React from "react";
-import ReactDOM from "react-dom/client";
+// import React from "react";
+// import ReactDOM from "react-dom/client";
 import "../../styles/index.css";
 import { Authenticator } from "@aws-amplify/ui-react";
+
 import { FormEvent, useState } from "react";
 import { Loader, Placeholder } from "@aws-amplify/ui-react";
 import "../../App.css";
